@@ -2,6 +2,10 @@
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import Badge from '../components/Badge.astro';
+import LinkedInIcon from '../components/icons/LinkedIn.astro';
+import GitHubIcon from '../components/icons/GitHub.astro';
+import Social from  '../components/Social.astro';
+
 ---
 
 <Layout title="Welcome to Astro.">
@@ -33,8 +37,20 @@ import Badge from '../components/Badge.astro';
 				<span class=" opacity-85">Actualmente estoy buscando mi primera oportunidad laboral como desarrollador. 
 				 Me caracterizo porque me gusta resolver problemas, metódico y con facilidades para la comunicación.</span>
 			</h2>
-			<ul></ul>
+
+			<nav class="flex gap-x-2">
+				<Social href="https://www.linkedin.com/in/diego-ignacio-arancibia-pinto-92a3301ba/">
+					<LinkedInIcon class="w-6 h-6" />
+					LinkedIn
+				</Social>
+
+				<Social href="https://github.com/Diego-Arancibia-29">
+					<GitHubIcon class="w-6 h-6" />
+					GitHub
+				</Social>
+
+			</nav>
 		</section>
-		
+
 	</main>
 </Layout>
