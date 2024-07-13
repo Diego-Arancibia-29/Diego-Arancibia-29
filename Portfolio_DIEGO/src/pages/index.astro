@@ -2,7 +2,8 @@
 import Layout from '../layouts/Layout.astro';
 import Badge from '../components/Badge.astro';
 import LinkedInIcon from '../components/icons/LinkedIn.astro';
-import Briefcase from '../components/icons/Briefcase.astro';
+import BriefcaseIcon from '../components/icons/Briefcase.astro';
+import ToolIcon from '../components/icons/Tool.astro';
 
 import GitHubIcon from '../components/icons/GitHub.astro';
 import EmailIcon from '../components/icons/Mail.astro';
@@ -17,8 +18,8 @@ import SectionContainer from  '../components/SectionContainer.astro';
 	title="Portfolio - Diego Arancibia"
 	description="Contrata al mejor elemento para tu empresa"
 >
-	<main>
-		<SectionContainer>
+	<main class="px-4">
+		<SectionContainer class="py-44 pb-24">
 
 			<img 
 			class="rounded-full w-12 h-12 mb-4"
@@ -26,7 +27,7 @@ import SectionContainer from  '../components/SectionContainer.astro';
 			alt="diego photo" 
 			/>
 
-			<h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-4">
+			<h1 class="text-white text-2xl lg:text-4xl md:text-4xl font-bold flex flex-row gap-x-4 pb-4">
 				Hola, soy Diego Arancibia <a
 
 					href="https://www.linkedin.com/in/diego-ignacio-arancibia-pinto-92a3301ba/"
@@ -38,7 +39,7 @@ import SectionContainer from  '../components/SectionContainer.astro';
 				</a>
 				
 			</h1>
-			<h2 class="text-white text-2xl bopacity-80">
+			<h2 class="text-white text-2xl text-wrap  bopacity-80">
 				<span>+2 años de experiencia.</span>
 				<span class="text-yellow-200/90">Desarrollador Full-Stack titulado de Ingeniería en Informática.</span>
 				<span class="text-red-200/90">De Santiago de Chile.</span> 
@@ -57,7 +58,7 @@ import SectionContainer from  '../components/SectionContainer.astro';
 					GitHub
 				</Social>
 
-				<Social href="https://github.com/Diego-Arancibia-29">
+				<Social href="mailto:d.arancibia29@gmail.com">
 					<EmailIcon class="w-6 h-6" />
 					d.arancibia29@gmail.com
 				</Social>
@@ -65,10 +66,18 @@ import SectionContainer from  '../components/SectionContainer.astro';
 			</nav>
 		</SectionContainer>
 
-		<SectionContainer>
-			<h2 class="text-white text-2xl font-semibold mb-6 flex gap-x-3 items-center">
-				<Briefcase class="size-7"/>
+		<SectionContainer id="experiencia">
+			<h2 class="text-white text-2xl font-semibold  mb-6 flex gap-x-3 flex items-center ">
+				<BriefcaseIcon class="size-7"/>
 				Experiencia laboral</h2>
+
+			<Experience />
+		</SectionContainer>
+
+		<SectionContainer id="proyectos">
+			<h2 class="text-white text-2xl font-semibold  mb-6 flex gap-x-3 flex items-center ">
+				<ToolIcon class="size-7"/>
+				Proyectos</h2>
 
 			<Experience />
 		</SectionContainer>
