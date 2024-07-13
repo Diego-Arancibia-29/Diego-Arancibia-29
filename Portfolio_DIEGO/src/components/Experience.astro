@@ -1,0 +1,41 @@
+---
+
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
+
+    {
+        date: 'Agosto 2023 - Diciembre 2023',
+        title:'Analista de Seguridad de la Información - FORUM Servicios Financieros',
+        description:
+            'Desarrollar recursos de educación para los colaboradores, tales como Boletines mensuales sobre ciberseguridad. Infografías con contenido informativo sobre buenas prácticas en relación a la seguridad de la información para la organización en general.',
+
+                
+    },
+
+    {
+        date: 'Febrero 2022 - Febrero 2023',
+        title:'Hardware Technician - BUK',
+        description:
+            'Desarrollar recursos de educación para los colaboradores, tales como Boletines mensuales sobre ciberseguridad. Infografías con contenido informativo sobre buenas prácticas en relación a la seguridad de la información para la organización en general.',
+
+                
+    },
+
+
+]
+
+---
+
+<ol class="relative mt-16">
+    {
+        EXPERIENCIE.map((experiencie) => (
+            <li class="">
+            <ExperienceItem {...experiencie} />
+            </li>
+        ))
+    }
+
+</ol>
+
+
+
